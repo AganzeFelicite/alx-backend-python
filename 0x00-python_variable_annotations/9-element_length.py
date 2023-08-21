@@ -5,7 +5,7 @@ for returning
 """
 
 
-from typing import List, Tuple, Sequence, Iteratable
+from typing import List, Tuple, Sequence, Iterable
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
