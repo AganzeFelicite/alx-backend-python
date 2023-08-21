@@ -11,4 +11,4 @@ def to_str(n: float) -> str:
     string representation of
     float
     """
-    return "".format(n)
+    return "{}".format(n)
