@@ -8,11 +8,11 @@ advanced task
 from typing import Union, Mapping, Any, TypeVar
 
 
-A = TypeVar('A')
+T = TypeVar('T')
 
 
 def safely_get_value(dct: Mapping, key: Any,
-                     default: Union[A, None] = None) -> Union[A, Any]:
+                     default: Union[T, None] = None) -> Union[T, Any]:
     """
     add types to this
     provided codes
