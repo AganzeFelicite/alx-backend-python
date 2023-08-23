@@ -6,18 +6,18 @@ generator
 """
 
 
-from typing import AsyncGenerator
-import asyncio
-import random
+from asyncio import sleep
+from typing import Generator
+from random import random
 
 
-async def async_generator() -> AsyncGenerator[float, None]:
+async def async_generator() -> Generator[float, None, None]:
     """
     generators in python
     and asyncio
     """
     a: int = 1
     while a <= 10:
-        await asyncio.sleep(1)
-        yield 10 * random.random()
+        await sleep(1)
+        yield 10 * random()
         a += 1
