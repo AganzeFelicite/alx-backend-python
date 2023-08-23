@@ -6,12 +6,12 @@ generator
 """
 
 
-from typing import Generator
+from typing import AsyncGenerator
 import asyncio
 import random
 
 
-async def async_generator() -> Generator[float, None, Non]:
+async def async_generator() -> AsyncGenerator[float, None]:
     """
     generators in python
     and asyncio
