@@ -19,5 +19,5 @@ async def async_generator() -> AsyncGenerator[float, None]:
     a: int = 1
     while a <= 10:
         await asyncio.sleep(1)
-        yield random.uniform(0, 10)
+        yield 10 * random.random()
         a += 1
